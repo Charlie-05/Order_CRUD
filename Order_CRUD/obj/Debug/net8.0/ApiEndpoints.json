@@ -213,8 +213,8 @@
         "IsRequired": false
       },
       {
-        "Name": "product",
-        "Type": "Order_CRUD.Entities.Product",
+        "Name": "productRequest",
+        "Type": "Order_CRUD.DTOs.RequstDTOs.ProductRequestDTO",
         "IsRequired": true
       }
     ],

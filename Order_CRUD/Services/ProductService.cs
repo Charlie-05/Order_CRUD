@@ -43,14 +43,14 @@ namespace Order_CRUD.Services
             return await _productRepository.DeleteProduct(getProduct);
         }
 
-        public async Task<Product> UpdateProduct(int id, Product product)
+        public async Task<Product> UpdateProduct(int id, ProductRequestDTO productRequest)
         {
             var getProduct = await _productRepository.GetProductById(id) ?? throw new Exception("Product Not found");
-            getProduct.Name = product.Name;
-            getProduct.Description = product.Description;
-            getProduct.Price = product.Price;
-            getProduct.Stock = product.Stock;
-            getProduct.Category = product.Category;
+            getProduct.Name = productRequest.Name;
+            getProduct.Description = productRequest.Description;
+            getProduct.Price = productRequest.Price;
+            getProduct.Stock = productRequest.Stock;
+            getProduct.Category = productRequest.Category;
             var updateProduct = await _productRepository.UpdateProduct(getProduct);
             return updateProduct;
         }

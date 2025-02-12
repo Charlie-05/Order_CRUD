@@ -57,11 +57,11 @@ namespace Order_CRUD.Controllers
             }
         }
         [HttpPut]
-        public async Task<IActionResult> UpdateProduct(int id, Product product)
+        public async Task<IActionResult> UpdateProduct(int id, ProductRequestDTO productRequest)
         {
             try
             {
-                var data = await _productService.UpdateProduct(id, product);
+                var data = await _productService.UpdateProduct(id, productRequest);
                 return Ok(data);
             }
             catch (Exception ex)
