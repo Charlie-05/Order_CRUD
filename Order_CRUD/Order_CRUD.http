@@ -1,0 +1,6 @@
+@Order_CRUD_HostAddress = http://localhost:5095
+
+GET {{Order_CRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

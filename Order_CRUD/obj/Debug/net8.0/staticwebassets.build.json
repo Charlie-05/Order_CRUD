@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PHzDkDtsZCs2kreSFVsAoHM7nt5APmJmYQhq8KCC6dY=",
+  "Source": "Order_CRUD",
+  "BasePath": "_content/Order_CRUD",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
